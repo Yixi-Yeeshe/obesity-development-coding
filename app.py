@@ -15,11 +15,10 @@ DATA_PATH = "obesity development.csv"
 OPTIONS = [
     "1. Obesity as gradual progression (肥胖作为累积性变化)",
     "2. Obesity as uncontrollable transformation (肥胖作为失控变化)",
-    "3. Obesity as life stage or age-related transformation (肥胖作为生理和年龄变化)",
-    "4. Obesity as sudden/rapid deterioration (肥胖作为突变崩坏)",
-    "5. Obesity as unstable cyclical/recurrent transformation (肥胖作为循环性的转变)",
-    "6. Obesity as easily triggered (肥胖作为易触发变化)",
-    "7. ambiguous, hard to classify"
+    "3. Obesity as sudden/rapid deterioration (肥胖作为突变崩坏)",
+    "4. Obesity as unstable cyclical/recurrent transformation (肥胖作为循环性的转变)",
+    "5. Obesity as easily triggered (肥胖作为易触发变化)",
+    "6. ambiguous, hard to classify"
 ]
 
 S_COLUMNS = [f"S{i}" for i in range(1, 9)]
