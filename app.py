@@ -326,12 +326,20 @@ if not coder_df.empty:
     completed_sentence_ids = set(coder_df["sentence_id"].astype(str).tolist())
 else:
     completed_sentence_ids = set()
+    
+valid_ids = {p["sentence_id"] for p in PAGES}
+completed_sentence_ids = completed_sentence_ids.intersection(valid_ids)
 
 total = len(PAGES)
 done = len(completed_sentence_ids)
 
-st.progress(done / total)
+# 安全计算进度条
+progress = done / total if total > 0 else 0
+progress = min(max(progress, 0), 1)
+
+st.progress(progress)
 st.write(f"进度：{done}/{total}")
+
 
 
 # Reset position when coder changes
