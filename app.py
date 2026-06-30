@@ -370,10 +370,16 @@ if st.session_state.finished:
     st.balloons()
 
     st.divider()
-    if st.button("更新 development_kappa 表"):
+
+    if st.button("🔍 查看/修改答案"):
+        st.session_state.finished = False
+        st.session_state.current_index = 0
+        st.rerun()
+
+    if st.button("更新 causes_kappa 表"):
         latest_df = read_raw_data_cached()
         update_kappa_format(kappa_ws, latest_df)
-        st.success("development_kappa 已更新。")
+        st.success("causes_kappa 已更新。")
 
     st.stop()
 
