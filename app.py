@@ -17,8 +17,7 @@ OPTIONS = [
     "2. Obesity as uncontrollable transformation (肥胖作为失控变化)",
     "3. Obesity as sudden/rapid deterioration (肥胖作为突变崩坏)",
     "4. Obesity as unstable cyclical/recurrent transformation (肥胖作为循环性的转变)",
-    "5. Obesity as easily triggered (肥胖作为易触发变化)",
-    "6. Obesity as belly or thigh -first progression"
+    "5. Obesity as belly or thigh -first progression"
            ]
 S_COLUMNS = [f"S{i}" for i in range(1, 9)]
 
